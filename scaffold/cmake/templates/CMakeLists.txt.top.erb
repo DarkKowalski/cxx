@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION <%= version %>)
+
+project(<%= project %> <%= languages %>)
+
+set(CMAKE_CXX_STANDARD <%= cxx_standard %>)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+add_subdirectory(src)
